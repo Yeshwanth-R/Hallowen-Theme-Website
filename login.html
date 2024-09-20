@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('images/login-back.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-between">
+    <div></div>
+    <div class="bg-black bg-opacity-70 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-3xl text-orange-500 font-bold text-center mb-8">👻 Halloween Login 👻</h2>
+
+        <form action="/welcome.html">
+            <div class="mb-4">
+                <label class="block text-orange-300 text-sm font-bold mb-2" for="username">Email</label>
+                <input
+                required
+                    class="w-full focus:cursor-auto px-3 py-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="email" id="username" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-orange-300 text-sm font-bold mb-2" for="password">Password</label>
+                <input
+                required
+                    class="w-full px-3 py-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="password" id="password" placeholder="Enter your password">
+            </div>
+
+            <div class="flex items-center justify-between">
+                <button
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="submit">
+                    Login
+                </button>
+            </div>
+        </form>
+
+        <p class="text-center text-orange-300 text-sm mt-4">Forgot password? <a href="#"
+                class="underline hover:text-orange-500">Reset it</a></p>
+    </div>
+
+    <footer class="w-full bg-black bg-opacity-80 py-4">
+        <div class="flex items-center justify-center">
+            <img src="images/IEEE-Logo.jpg" alt="Logo" class="h-14 mr-3"> <!-- Add your logo URL -->
+            <span class="text-orange-300">© 2024 Spooky Corp. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('/images/login-back.jpg');
+            /* Halloween themed background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen text-white p-4">
+    <div class="bg-black bg-opacity-80 p-8 rounded-lg shadow-lg max-w-lg w-full">
+    <h1 class="text-4xl sm:text-5xl font-bold text-orange-500 text-center mb-8">🎃 Register for the Spooky Event 🎃</h1>
+
+        <form action="/successRegistration.html">
+            <!-- Name Field -->
+            <div class="mb-4">
+                <label class="block text-orange-300 text-sm font-bold mb-2" for="name">Full Name</label>
+                <input
+                    class="w-full px-3 py-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- USN Field -->
+            <div class="mb-4">
+                <label class="block text-orange-300 text-sm font-bold mb-2" for="usn">USN</label>
+                <input
+                    class="w-full px-3 py-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="text" id="usn" placeholder="Enter your University Serial Number" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-4">
+                <label class="block text-orange-300 text-sm font-bold mb-2" for="email">Email</label>
+                <input
+                    class="w-full px-3 py-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="mb-6">
+                <label class="block text-orange-300 text-sm font-bold mb-2" for="password">Phone Number</label>
+                <input
+                    class="w-full px-3 py-2 text-gray-900 bg-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="text" id="password" placeholder="Enter your Phone Number" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex items-center justify-between">
+                <button
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+                    type="submit">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
